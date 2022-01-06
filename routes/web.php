@@ -18,8 +18,12 @@ use App\Http\Controllers\MasyarakatController;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing-page');
 });
 
 Auth::routes();
