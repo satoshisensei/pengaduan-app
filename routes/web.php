@@ -39,7 +39,7 @@ Route::middleware(['auth'])->group(function () {
 
     // Main Data
     Route::get('/databalasan',[BalasanController::class, 'data'])->name('balasan-data');
-    Route::get('/databalasam',[BalasanController::class, 'data'])->name('balasan-data');
+    Route::get('/datalaporan',[LaporanController::class, 'data'])->name('laporan-data');
 
     Route::resource('/laporan', LaporanController::class)->except('show');
     Route::resource('/balasan', BalasanController::class);
